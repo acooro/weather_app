@@ -13,35 +13,37 @@
 
 
 <body>
-  <header class="container">
+  <header class="container-fluid">
     <h1>Weather Dashboard</h1>
   </header>
   <!--Search area-->
-  <div class ="container">
+  <div class ="container-fluid">
+    
     <div class ="row">
       <div class ="col-3 text-left">
         <h2>Search for City</h2>
         <input type="city" class="form-control" id="inputCity">
         
 
-         <!-- display area-->
-
         <button type ="button" class="btn btn-primary" id="seachBtn">Search</button>
 
-        
+
         <div id="storeCity"></div>
 
         <!--Current weather area-->
-        <div class="col-9">
-          <div class="current-weather">
-            <h3 id ="cityDate"></h3>
-
-            <div id ="weatherThings"></div>
-          </div>
-        </div>
 
       </div>
+
+      <div class="col-9">
+        <div class="current-weather border border-dark">
+          <h3 id ="cityDate"></h3>
+            <div id ="weatherThings"></div>
+        </div>
+      </div>
+
+      
     </div>
+    
   </div>
 
   <!-- 5 days displayer area-->
