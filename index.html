@@ -23,19 +23,24 @@
         <h2>Search for City</h2>
         <input type="city" class="form-control" id="inputCity">
         
+
+         <!-- display area-->
+
         <button type ="button" class="btn btn-primary" id="seachBtn">Search</button>
-        <div id ="savedCity"></div>
+
+        
+        <div id="storeCity"></div>
+
+        <!--Current weather area-->
+        <div class="col-9">
+          <div class="current-weather">
+            <h3 id ="cityDate"></h3>
+
+            <div id ="weatherThings"></div>
+          </div>
+        </div>
+
       </div>
-    </div>
-  </div>
-
-  <!-- display area-->
-  <div class ="col-9">
-    <div class="current-weather border border-dark">
-      <h3 id ="cityDate"></h3>
-      
-
-      <div id ="weather-items"></div>
     </div>
   </div>
 
@@ -43,12 +48,6 @@
 
   <h4>5-Day Weather report</h4>
   <div class="row" id ="fiveDay"></div>
-
-
-
-
-
-
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
