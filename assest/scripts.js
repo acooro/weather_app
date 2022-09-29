@@ -74,7 +74,7 @@ function displayForecast(data) {
 
 function storeCity(getCity) {
   localStorage.setItem("City Name", getCity)
-
+  
   cityButtons = 
     `<button type="button" class="btn btn-secondary" id="store1">${getCity}</button>`;
     $("#storeCity").append(cityButtons);
@@ -84,6 +84,7 @@ function storeCity(getCity) {
 }
 
   $("#storeCity").on("click", function pullCity(cityButtons) {
+    
     console.log("2nd button clicked");
     var pullCity = localStorage.getItem("City Name");
   
@@ -97,6 +98,7 @@ function storeCity(getCity) {
 
 
 seachBtn.addEventListener("click", function getCity(){
+  
   var getCity = $("#inputCity").val();
   console.log (getCity)
 
